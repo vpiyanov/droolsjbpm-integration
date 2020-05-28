@@ -15,6 +15,10 @@
 
 package org.jbpm.simulation;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -28,10 +32,6 @@ import org.jbpm.workflow.core.NodeContainer;
 import org.junit.Test;
 import org.kie.api.definition.process.Connection;
 import org.kie.api.definition.process.Node;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
 public class BPMN2SimulationDataProviderTest {
 
@@ -77,11 +77,6 @@ public class BPMN2SimulationDataProviderTest {
             
             public long getId() {
                 return 2;
-            }
-
-            @Override
-            public String getNodeUniqueId() {
-                return null;
             }
         });
         
@@ -140,12 +135,6 @@ public class BPMN2SimulationDataProviderTest {
             
             public long getId() {
                 return 2;
-            }
-
-            @Override
-            public String getNodeUniqueId() {
-                // TODO Auto-generated method stub
-                return null;
             }
         });
         
